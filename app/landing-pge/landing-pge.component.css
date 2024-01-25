@@ -1,0 +1,143 @@
+*
+{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    box-sizing: border-box;
+}
+.container
+{
+    font-size: medium;
+    width:100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#ce1010b5,#671a1a);
+    color:#fff;
+    padding-top: 4%;
+    padding-left: 10%;
+    padding-bottom: 10%;
+    h3{
+        font-weight:bolder;
+        color: #333;
+    }
+}
+.container h1
+{
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+.container button
+{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#9418fd,#571094);
+    color: #fff;
+    font-size: 16px;
+    padding: 15px 25px;
+    margin: 30px 0 20px;
+    font-weight: 600;
+    border-radius: 40px;
+    outline: 0;
+    border: 0;
+}
+
+.input-box
+{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-height: 150px;
+    background: #fff;
+    color: #333;
+    outline:none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#menu
+{
+    position: fixed;
+    top:0;
+    right:0;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+#menu button
+{
+    border-radius: 0;
+}
+.menu-tab
+{
+
+    display: inline-flex;
+
+
+}
+.menu-tab #newChapter
+{
+    display: flex;
+}
+.menu-tab #delete-btn
+{
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.menu
+{
+   
+
+   
+    margin-left: 80px;
+    color:black;
+    width: 30%;
+  
+    min-height: 90px;
+    position: fixed;
+    right:0;
+    top:0;
+    padding: 0;
+    margin-top: 80px;
+    margin-right: 10px;
+    background:white;
+    border: 2px solid black;
+    
+}
+input
+{
+    border: transparent;
+}
+.menu button
+{
+
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#9418fd,#571094);
+    color: #fff;
+    font-size: 10px;
+    padding: 10px 20px;
+    margin: 30px 0 20px;
+    font-weight: 600;
+    border-radius: 40px;
+    outline: 0;
+    border: 0;
+}
+.menu-tab
+{
+    padding-left: 50px;
+    align-items: center;
+}
+.button-container
+{
+    display: flex;
+    align-self: center;
+}
+.button-container button
+{
+    background:red;
+    margin:2px;
+    font-weight: 100;
+    border-radius: 0px;
+    border: 1px solid black;
+}

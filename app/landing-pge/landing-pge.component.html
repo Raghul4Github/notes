@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+</head>
+<body>
+
+    <div  class="container">
+        
+        <h1>NOTES</h1>
+        <br>
+        <!-- <button (click)="createNewNotes()">CREATE NOTE</button> -->
+        <div id="menu">
+            <button  (click)="showOrHideMenu()">EXPLORE</button>
+        </div>
+       
+        <div *ngIf="view" class="menu" >
+            <div   class="button-container">
+                <button (click)="showOrHideMenu()">CLOSE</button>
+                <button (click)="addNewChapter()">ADD NEW CHAPTER</button>
+                <button (click)="addNewChapter()">SEARCH</button>
+                
+            </div>
+           
+            <div *ngFor="let chapter of pushNewChapter" class="menu-tab">
+                <div id="newChapter">
+                    <input type="text" [(ngModel)]="title" >
+                </div>
+                <div id="delete-btn">
+                   <button (click)="showOrHideMenu()">DELETE</button>
+                </div>
+                
+    
+            </div>
+            
+           
+   
+        </div>
+        
+        <div *ngFor="let newDiv of new" >
+          
+           <h3> {{title}}{{i}}</h3>
+            <p contenteditable="true" class="input-box" >
+
+         
+            </p>
+            <button (click)="showOrHideMenu()">SEND</button>
+
+        </div>
+        
+    </div>
+    
+</body>
+</html>
